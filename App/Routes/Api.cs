@@ -3,9 +3,9 @@ using AmazingService.Extensions.Response;
 
 namespace AmazingService.App.Routes
 {
-    public class Home : CarterModule
+    public class Api : CarterModule
     {
-        public Home() : base("amazing")
+        public Api() : base("api")
         {
             this.RequiresAuthorization();
 
