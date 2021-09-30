@@ -6,7 +6,7 @@ namespace AmazingService.App.Auth
     /// <summary>
     /// Custom authentication scheme option class for Infusion.
     /// </summary>
-    public class InfusionAuthOptions : AuthenticationSchemeOptions
+    public class AuthOptions : AuthenticationSchemeOptions
     {
         public const string DefaultScheme = "Infusion Adapter";
 

@@ -13,9 +13,9 @@ namespace AmazingService.App.Auth
     /// <summary>
     /// The custom authorization handler for any incoming request to protected route modules.
     /// </summary>
-    public class InfusionAuthHandler : AuthenticationHandler<InfusionAuthOptions>
+    public class AuthHandler : AuthenticationHandler<AuthOptions>
     {
-        public InfusionAuthHandler(IOptionsMonitor<InfusionAuthOptions> options, ILoggerFactory logger, UrlEncoder encoder, ISystemClock clock)
+        public AuthHandler(IOptionsMonitor<AuthOptions> options, ILoggerFactory logger, UrlEncoder encoder, ISystemClock clock)
             : base(options, logger, encoder, clock)
         {
         }

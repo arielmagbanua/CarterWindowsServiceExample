@@ -25,8 +25,8 @@ namespace AmazingService
 
             services.AddAuthentication((options) =>
             {
-                options.DefaultAuthenticateScheme = InfusionAuthOptions.DefaultScheme;
-                options.DefaultChallengeScheme = InfusionAuthOptions.DefaultScheme;
+                options.DefaultAuthenticateScheme = AuthOptions.DefaultScheme;
+                options.DefaultChallengeScheme = AuthOptions.DefaultScheme;
             })
                 .AddCustomAuth((options) =>
                 {
