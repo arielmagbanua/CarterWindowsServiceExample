@@ -1,0 +1,36 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <AssemblyName>AmazingService</AssemblyName>
+    <OutputType>Exe</OutputType>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="DLLs\**" />
+    <EmbeddedResource Remove="DLLs\**" />
+    <None Remove="DLLs\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="ibsgateway839">
+      <VersionMinor>0</VersionMinor>
+      <VersionMajor>1</VersionMajor>
+      <Guid>15d31627-2601-4dd5-a166-5b1dc1d3d370</Guid>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>false</Isolated>
+      <EmbedInteropTypes>false</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Views\**">
+       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+	<None Include=".env" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+    
+  <ItemGroup>
+    <PackageReference Include="Carter" Version="5.2.0" />
+    <PackageReference Include="Microsoft.Extensions.Hosting.WindowsServices" Version="5.0.1" />
+    <PackageReference Include="NReco.Logging.File" Version="1.1.2" />
+  </ItemGroup>
+</Project>
