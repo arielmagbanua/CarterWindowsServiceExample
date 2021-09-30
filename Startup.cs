@@ -8,12 +8,6 @@ namespace AmazingService
 {
     public class Startup
     {
-        public Startup()
-        {
-            // sets the directory of this service to the publish directory
-            System.IO.Directory.SetCurrentDirectory(System.AppDomain.CurrentDomain.BaseDirectory);
-        }
-
         public void ConfigureServices(IServiceCollection services)
         {
             // carter and routing services
