@@ -4,11 +4,11 @@ using Microsoft.Extensions.Logging;
 
 namespace AmazingService
 {
-    public class HomeModule : CarterModule
+    public class Home : CarterModule
     {
-        private readonly ILogger<HomeModule> _logger;
+        private readonly ILogger<Home> _logger;
 
-        public HomeModule(ILogger<HomeModule> logger)
+        public Home(ILogger<Home> logger)
         {
             _logger = logger;
 
