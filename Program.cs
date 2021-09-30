@@ -5,6 +5,12 @@ namespace AmazingService
 {
     public class Program
     {
+        public Program()
+        {
+            // sets the directory of this service to the publish directory
+            System.IO.Directory.SetCurrentDirectory(System.AppDomain.CurrentDomain.BaseDirectory);
+        }
+
         public static void Main(string[] args)
         {
             var host = Host.CreateDefaultBuilder(args)

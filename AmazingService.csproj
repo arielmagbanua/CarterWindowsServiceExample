@@ -9,17 +9,6 @@
     <EmbeddedResource Remove="DLLs\**" />
     <None Remove="DLLs\**" />
   </ItemGroup>
-  <ItemGroup>
-    <COMReference Include="ibsgateway839">
-      <VersionMinor>0</VersionMinor>
-      <VersionMajor>1</VersionMajor>
-      <Guid>15d31627-2601-4dd5-a166-5b1dc1d3d370</Guid>
-      <Lcid>0</Lcid>
-      <WrapperTool>tlbimp</WrapperTool>
-      <Isolated>false</Isolated>
-      <EmbedInteropTypes>false</EmbedInteropTypes>
-    </COMReference>
-  </ItemGroup>
 
   <ItemGroup>
     <Content Include="Views\**">
